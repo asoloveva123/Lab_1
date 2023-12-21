@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Город Новоазовск</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="">Главная страница</a></li>
+                <li><a href="gorod.html">О городе</a></li>
+                <li><a href="infrastructure.html">Инфраструктура</a></li> <!-- Вот эта строка добавлена -->
+                <li><a href="kultura.html">Культура и искусство</a></li>
+                <li><a href="svyaz.html">Обратная связь</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section id="first-section" class="section">
+        <div class="container">
+            <h1 style="margin-bottom: 0px;">Новоазовск</h1>
+            <h6 style="margin-top: 0px;color: darkcyan;">Наш любимый город</h6>
+
+            <p>
+                <strong>Новоазовск</strong> <em>(укр. Новоазовськ)</em> — город на берегу Азовского моря, райцентр Новоазовского района Донецкой области Украины.<sup><a
+                    href="">[4]</a></sup>; В начале 1918 года в станице была впервые установлена советская власть, в дальнейшем селение оказалось в зоне боевых действий Гражданской войны. В мае 1918 года станица попала в приграничную с Украиной австро-немецкую оккупационную зону.<sup><a href="">[5]</a></sup>.
+            </p>
+
+            <p>
+
+               1920 года станица вместе с западной частью ликвидируемой области войска Донского была передана из состава России в Украинскую ССР, где вошла в Донецкую губернию. При возвращении значительной части этих территорий обратно РСФСР в 1924 году станица возвращена не была, оставшись частью УССР.<sup><a
+                    href="">[3]</a></sup>.
+            </p>
+            <p>
+
+
+                В 1923 году переименована в станицу Будённовскую[6].
+
+                В 1929 году здесь были созданы два колхоза, которые к 1931 году объединили 80 % дворов. Образовались рыболовецкая артель и совхоз. В 1933 году была организована машинно-тракторная станция (МТС). Были построены молочнотоварные, овцеводческие, свиноводческие, птицеводческие фермы.<sup><a href="">[6]</a></sup>.
+            </p>
+            <p>
+                С 1938 года посёлок городского типа Будённовский. Накануне Великой Отечественной войны в станице работали местная электростанция, больница, две общеобразовательные школы, районная библиотека, дом культуры <sup><a href="">[7]</a></sup>  Среди отраслей обрабатывающей пром-сти наиболее развиты металлургия, пищевая, машиностроение и металлообработка.
+                <sup><a href="">[8]</a></sup> <sup><a href="">[9]</a></sup>.
+            </p>
+            <p>
+                В 1973 году население составляло 13 тыс. человек, здесь действовали кирпичный завод, птицекомбинат, а также музей боевой и трудовой славы.<sup><a
+                    href="">[10]</a></sup>. В январе 1989 года численность населения составляла 12 988 человек[12], основой экономики являлась пищевая промышленность <sup><a href="">[11]</a></sup>. <sup><a href="">[12]</a></sup>.
+            </p>
+
+            <div class="images">
+                <div class="img-container">
+                    <img src="/images/1.jpg" alt="">
+                    <p>Новоазовск</p>
+                </div>
+
+                <div class="img-container">
+                    <img src="/images/2.jpg" alt="">
+                    <p>Церковь</p>
+                </div>
+
+                <div class="img-container">
+                    <img src="/images/3.jpg" alt="">
+                    <p>Памятник</p>
+                </div>
+
+                <div class="img-container">
+                    <img src="/images/4.jpg" alt="">
+                    <p>Школа</p>
+                </div>
+
+                <div class="img-container">
+                    <img src="/images/5.jpg" alt="">
+                    <p>Азов</p>
+                </div>
+
+                <div class="img-container">
+                    <img src="/images/6.jpg" alt="">
+                    <p>Новый год</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="infrastructure-section" class="section" style="display: none;">
+        <div class="container">
+            <h2>Инфраструктура</h2>
+            <p>Здесь можно разместить информацию о инфраструктуре города.</p>
+        </div>
+    </section>
+</div>
+<script>
+    // Функция для активации вкладки "Инфраструктура"
+    function showInfrastructureTab() {
+        var infrastructureTab = document.getElementById("infrastructure-section");
+        infrastructureTab.style.display = "block";
+    }
+
+    // Найти ссылку на вкладку "Инфраструктура" и добавить обработчик события
+    var infrastructureLink = document.querySelector('ul.menu li:nth-child(3) a');
+    infrastructureLink.addEventListener("click", showInfrastructureTab);
+</script>
+</body>
+</html>
